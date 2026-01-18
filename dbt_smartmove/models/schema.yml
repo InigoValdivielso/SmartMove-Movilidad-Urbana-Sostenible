@@ -1,0 +1,37 @@
+version: 2
+
+models:
+  - name: estado_actual_parkings 
+    columns:
+      - name: sensor_id
+        tests:
+          - not_null
+          - unique
+      - name: estado
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['libre', 'ocupado'] 
+
+  - name: estado_actual_bicis
+    columns:
+      - name: station_id
+        tests:
+          - not_null
+          - unique
+      - name: free_bikes
+        tests:
+          - not_null
+
+  - name: clean_puntos_carga
+    columns:
+      - name: punto_carga_id
+        tests:
+          - not_null
+          - unique
+      - name: latitud
+        tests:
+          - not_null 
+      - name: longitud
+        tests:
+          - not_null

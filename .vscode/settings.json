@@ -1,0 +1,8 @@
+{
+    "python-envs.defaultEnvManager": "ms-python.python:system",
+    "python-envs.pythonProjects": [],
+    "workbench.editorAssociations": {
+   "*.md": "vscode.markdown.preview.editor"
+}
+
+}

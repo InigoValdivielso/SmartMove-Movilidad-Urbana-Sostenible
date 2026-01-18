@@ -1,0 +1,68 @@
+services:
+  postgres:
+    image: postgres:14-alpine
+    container_name: postgres_db
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: admin
+      POSTGRES_DB: bigdata_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./data/postgres:/var/lib/postgresql/data
+      - ./data_sources/postgres_init:/docker-entrypoint-initdb.d
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U admin -d bigdata_db"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+      start_period: 20s
+
+  n8n:
+    image: docker.n8n.io/n8nio/n8n:latest
+    restart: unless-stopped
+    container_name: n8n_workflow
+    ports:
+      - "5678:5678"
+    volumes:
+      - ./data/n8n:/home/node/.n8n
+      - ./data_sources/files:/data_files  
+    environment:
+      - GENERIC_TIMEZONE=Europe/Madrid
+      - DB_TYPE=postgresdb
+      - DB_POSTGRESDB_HOST=postgres
+      - DB_POSTGRESDB_PORT=5432
+      - DB_POSTGRESDB_DATABASE=bigdata_db
+      - DB_POSTGRESDB_USER=admin
+      - DB_POSTGRESDB_PASSWORD=admin
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+  mosquitto:
+    image: eclipse-mosquitto:latest
+    restart: unless-stopped
+    container_name: mqtt_broker
+    ports:
+      - "1883:1883"   # Puerto estándar de MQTT
+      - "9001:9001"   # Puerto para WebSockets
+    volumes:
+      - ./mosquitto_config:/mosquitto/config
+
+  metabase:
+    image: metabase/metabase:latest
+    container_name: metabase_dashboard
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./data/metabase:/metabase-data
+    environment:
+      - MB_DB_TYPE=postgres
+      - MB_DB_DBNAME=bigdata_db      
+      - MB_DB_PORT=5432
+      - MB_DB_USER=admin
+      - MB_DB_PASS=admin
+      - MB_DB_HOST=postgres
+    depends_on:
+      postgres:
+        condition: service_healthy

@@ -1,0 +1,2 @@
+{"__type":"$$EventMessageAudit","id":"35bcbfd3-239a-4edc-8167-41605a450c38","ts":"2025-11-25T14:03:04.995+00:00","eventName":"n8n.audit.user.login.success","message":"n8n.audit.user.login.success","payload":{"userId":"df952faf-d7e3-4a20-b287-7137946c0990","_email":"valdivielso.inigo@opendeusto.es","_firstName":"Iñigo","_lastName":"Valdivielso","globalRole":"global:owner","authenticationMethod":"email"}}
+{"__type":"$$EventMessageConfirm","confirm":"35bcbfd3-239a-4edc-8167-41605a450c38","ts":"2025-11-25T14:03:04.997+00:00","source":{"id":"0","name":"eventBus"}}

@@ -1,0 +1,30 @@
+[0m11:52:20.053499 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D452DEB410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D4542F11D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D4542A0610>]}
+
+
+============================== 11:52:20.060554 | e8eaf6f0-afe7-42d1-a9fa-22b830433657 ==============================
+[0m11:52:20.060554 [info ] [MainThread]: Running with dbt=1.10.13
+[0m11:52:20.062554 [debug] [MainThread]: running dbt with arguments {'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\txiki\\.dbt', 'log_format': 'default', 'write_json': 'True', 'use_colors': 'True', 'warn_error': 'None', 'static_parser': 'True', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'indirect_selection': 'eager', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'log_path': 'logs', 'version_check': 'True', 'use_experimental_parser': 'False', 'quiet': 'False', 'introspect': 'True', 'empty': 'None', 'log_cache_events': 'False', 'debug': 'False', 'no_print': 'None', 'invocation_command': 'dbt init dbt_smartmove', 'printer_width': '80', 'target_path': 'None'}
+[0m11:52:20.103135 [info ] [MainThread]: Creating dbt configuration folder at C:\Users\txiki\.dbt
+[0m11:52:20.107726 [debug] [MainThread]: Starter project path: C:\Python311\Lib\site-packages\dbt\include\starter_project
+[0m11:52:20.239119 [info ] [MainThread]: 
+Your new dbt project "dbt_smartmove" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m11:52:20.240546 [info ] [MainThread]: Setting up your profile.
+[0m11:54:40.073618 [info ] [MainThread]: Profile dbt_smartmove written to C:\Users\txiki\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m11:54:40.075641 [debug] [MainThread]: Command `dbt init` succeeded at 11:54:40.075641 after 140.14 seconds
+[0m11:54:40.076665 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D44DAA7E10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D44DA5A050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D44D7EE990>]}
+[0m11:54:40.077684 [debug] [MainThread]: Flushing usage events
+[0m11:54:40.974024 [debug] [MainThread]: An error was encountered while trying to flush usage events

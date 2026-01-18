@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<puntos_recarga>
+    <punto id="BCN-EV-001">
+        <ubicacion>
+            <direccion>Carrer de Mallorca, 401, 08013 Barcelona</direccion>
+            <latitud>41.4036</latitud>
+            <longitud>2.1744</longitud>
+        </ubicacion>
+        <tipo_conector>CCS Combo 2</tipo_conector>
+    </punto>
+    <punto id="BCN-EV-002">
+        <ubicacion>
+            <direccion>Passeig de Joan de Borbó, 74, 08039 Barcelona</direccion>
+            <latitud>41.3810</latitud>
+            <longitud>2.1860</longitud>
+        </ubicacion>
+        <tipo_conector>CHAdeMO</tipo_conector>
+    </punto>
+    <punto id="BCN-EV-003">
+        <ubicacion>
+            <direccion>Plaça de la Vila de Gràcia, 1, 08012 Barcelona</direccion>
+            <latitud>41.4015</latitud>
+            <longitud>2.1583</longitud>
+        </ubicacion>
+        <tipo_conector>Type 2</tipo_conector>
+    </punto>
+    <punto id="BCN-EV-004">
+        <ubicacion>
+            <direccion>Avinguda Diagonal, 686, 08034 Barcelona</direccion>
+            <latitud>41.3888</latitud>
+            <longitud>2.1179</longitud>
+        </ubicacion>
+        <tipo_conector>CCS Combo 2</tipo_conector>
+    </punto>
+    <punto id="BCN-EV-005">
+        <ubicacion>
+            <direccion>Carrer d'Arístides Maillol, 12, 08028 Barcelona</direccion>
+            <latitud>41.3809</latitud>
+            <longitud>2.1228</longitud>
+        </ubicacion>
+        <tipo_conector>Type 2</tipo_conector>
+    </punto>
+    <punto id="BCN-EV-006">
+        <ubicacion>
+            <direccion>Plaça d'Espanya, S/N, 08014 Barcelona</direccion>
+            <latitud>41.3750</latitud>
+            <longitud>2.1499</longitud>
+        </ubicacion>
+        <tipo_conector>CCS Combo 2</tipo_conector>
+    </punto>
+    <punto id="BCN-EV-007">
+        <ubicacion>
+            <direccion>Passeig de Lluís Companys, 12, 08018 Barcelona</direccion>
+            <latitud>41.3888</latitud>
+            <longitud>2.1804</longitud>
+        </ubicacion>
+        <tipo_conector>Type 2</tipo_conector>
+    </punto>
+    <punto id="BCN-EV-008">
+        <ubicacion>
+            <direccion>Gran Via de les Corts Catalanes, 585, 08007 Barcelona</direccion>
+            <latitud>41.3863</latitud>
+            <longitud>2.1649</longitud>
+        </ubicacion>
+        <tipo_conector>CHAdeMO</tipo_conector>
+    </punto>
+    <punto id="BCN-EV-009">
+        <ubicacion>
+            <direccion>Carrer del Comte d'Urgell, 1, 08011 Barcelona</direccion>
+            <latitud>41.3797</latitud>
+            <longitud>2.1585</longitud>
+        </ubicacion>
+        <tipo_conector>Type 2</tipo_conector>
+    </punto>
+    <punto id="BCN-EV-010">
+        <ubicacion>
+            <direccion>Carrer d'Olot, 7, 08024 Barcelona</direccion>
+            <latitud>41.4135</latitud>
+            <longitud>2.1527</longitud>
+        </ubicacion>
+        <tipo_conector>CCS Combo 2</tipo_conector>
+    </punto>
+</puntos_recarga>
